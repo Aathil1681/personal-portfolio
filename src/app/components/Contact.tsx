@@ -37,7 +37,7 @@ const Contact = () => {
     },
     {
       Icon: SiWhatsapp,
-      href: "https://w.app/ndfvjg",
+      href: "https://w.app/m7iccp",
       color: "from-green-500 to-green-600",
       hover: "hover:from-green-400 hover:to-green-500",
     },
