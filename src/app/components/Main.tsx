@@ -4,8 +4,9 @@ import { useState, useRef } from "react";
 import Spline from "@splinetool/react-spline";
 
 interface HeroProps {
-  sceneUrl?: string; // allow custom Spline scene URLs
-  title?: string; // allow custom hero text
+  sceneUrl?: string;
+  title?: string;
+  scrollToId?: string;
 }
 
 const Main = ({
