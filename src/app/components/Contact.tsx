@@ -94,7 +94,7 @@ const Contact = () => {
               </div>
               <div className="flex-1">
                 <div className="text-sm text-slate-400">Phone</div>
-                <div className="text-white font-medium">+94 75 652 0606</div>
+                <div className="text-white font-medium">+971 54 528 0331</div>
               </div>
             </div>
           </div>
@@ -122,16 +122,48 @@ const Contact = () => {
         <div className="p-8 rounded-3xl bg-gradient-to-br from-indigo-500/5 via-pink-500/5 to-yellow-500/5 border border-indigo-400/20 backdrop-blur-sm flex items-center justify-center">
           <div className="text-center">
             <div className="w-20 h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-indigo-500/20 to-pink-500/20 border border-indigo-400/30 flex items-center justify-center">
-              <FiMail className="text-indigo-300 text-2xl" />
+              <svg
+                className="text-indigo-300 text-2xl"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
             </div>
             <h4 className="text-xl font-semibold text-white mb-2">
-              Send a Message
+              Download CV
             </h4>
             <p className="text-slate-400 mb-6">
-              Contact form coming soon. For now, use the email or social links
-              to reach out!
+              Get a copy of my resume with all my skills, experience, and
+              achievements in one document.
             </p>
-            <div className="w-32 h-1 bg-gradient-to-r from-indigo-400 to-pink-400 rounded-full mx-auto"></div>
+            <a
+              href="/cv/Resume.pdf"
+              download="Aathil-CV.pdf"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-indigo-500 to-pink-500 text-white font-medium rounded-lg hover:from-indigo-600 hover:to-pink-600 transition-all duration-200 shadow-lg hover:shadow-indigo-500/25"
+            >
+              <svg
+                className="w-5 h-5 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                />
+              </svg>
+              Download PDF
+            </a>
+            <div className="w-32 h-1 bg-gradient-to-r from-indigo-400 to-pink-400 rounded-full mx-auto mt-6"></div>
           </div>
         </div>
       </div>
