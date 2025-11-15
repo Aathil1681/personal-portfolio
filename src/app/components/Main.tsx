@@ -41,7 +41,7 @@ const Main = ({
       ) : (
         <div className="w-full h-full relative">
           <Image
-            src="/fallback.png"
+            src="/fallback.PNG"
             alt="Portfolio Background"
             fill
             className="object-cover"
