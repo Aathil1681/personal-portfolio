@@ -111,11 +111,11 @@ const Header = () => {
           ))}
 
           <a
-            href="#contact"
+            href="/cv/Resume.pdf"
             onClick={() => setIsMobileMenuOpen(false)}
             className="px-4 py-2 bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-500 text-white text-sm font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
           >
-            Get in Touch
+            Download CV
           </a>
         </div>
       )}
