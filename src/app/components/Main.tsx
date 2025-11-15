@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Spline from "@splinetool/react-spline";
+import Image from "next/image";
 
 interface HeroProps {
   sceneUrl?: string;
@@ -30,7 +31,7 @@ const Main = ({
 
   return (
     <div className="relative h-[110vh] w-full bg-black top-20">
-      {/* Show Spline only on desktop, fallback image on mobile */}
+      {/* Show Spline only on desktop, Next Image on mobile */}
       {!isMobile ? (
         <Spline
           scene={sceneUrl}
@@ -38,13 +39,18 @@ const Main = ({
           ref={splineRef}
         />
       ) : (
-        <div
-          className="w-full h-full bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/fallback.png)",
-          }}
-        />
+        <div className="w-full h-full relative">
+          <Image
+            src="/fallback.png"
+            alt="Portfolio Background"
+            fill
+            className="object-cover"
+            priority
+            quality={85}
+          />
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-black/70"></div>
+        </div>
       )}
 
       {/* Hero Text */}
