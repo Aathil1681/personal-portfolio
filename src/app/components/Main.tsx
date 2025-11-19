@@ -31,7 +31,6 @@ const Main = ({
 
   return (
     <div className="relative h-[110vh] w-full bg-black top-20">
-      {/* Show Spline only on desktop, Next Image on mobile */}
       {!isMobile ? (
         <Spline
           scene={sceneUrl}
@@ -56,8 +55,8 @@ const Main = ({
       {/* Hero Text */}
       {isLoaded || isMobile ? (
         <p
-          className="absolute top-10 w-full flex justify-center items-center text-center gap-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-500 drop-shadow-lg font-sans
-              text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl
+          className="absolute top-24 sm:top-10 w-full flex justify-center items-center text-center gap-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-500 drop-shadow-lg font-sans
+              text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl
               px-4 sm:px-6"
         >
           {title}
@@ -66,6 +65,31 @@ const Main = ({
         <p className="absolute bottom-10 left-5 sm:left-10 text-gray-400 text-sm sm:text-base">
           Loading 3D scene...
         </p>
+      )}
+
+      {/* Mobile Swipe Up Animation */}
+      {isMobile && (
+        <div className="absolute bottom-44 w-full flex flex-col items-center text-center">
+          <div className="animate-swipe-up text-gray-200 text-xl tracking-wide mb-2">
+            Swipe
+          </div>
+
+          <div className="animate-bounce-slow">
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="gray"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M12 5v14" />
+              <path d="m5 12 7 7 7-7" />
+            </svg>
+          </div>
+        </div>
       )}
     </div>
   );
