@@ -144,7 +144,7 @@ const Contact = () => {
               achievements in one document.
             </p>
             <a
-              href="/cv/Resume.pdf"
+              href="/cv/Aathil_Resume.pdf"
               download="Aathil-CV.pdf"
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-indigo-500 to-pink-500 text-white font-medium rounded-lg hover:from-indigo-600 hover:to-pink-600 transition-all duration-200 shadow-lg hover:shadow-indigo-500/25"
             >

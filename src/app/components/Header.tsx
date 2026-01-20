@@ -66,7 +66,7 @@ const Header = () => {
           ))}
 
           <a
-            href="/cv/Resume.pdf"
+            href="/cv/Aathil_Resume.pdf"
             download="Aathil-CV.pdf"
             className="ml-2 px-4 py-2 bg-gradient-to-r from-indigo-500 to-pink-500 text-white text-sm font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover:from-indigo-600 hover:to-pink-600"
           >

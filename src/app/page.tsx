@@ -55,6 +55,13 @@ const workData = [
     logo: "/experience/rizzi.jpg",
     desc: "Contributed front-end and UI work using Next.js, Tailwind CSS and modern libraries.",
   },
+  {
+    company: "Al Kashaf International",
+    role: "Full-stack Developer",
+    website: "https://alkashafgroup.com/",
+    logo: "/experience/kashaf.png",
+    desc: "Implemented internal dashboards, project tracking tools and employee management system.",
+  },
 ];
 
 export default function HomePage() {
